@@ -1,0 +1,22 @@
+# config/tags.yaml   ←  DO NOT change the indentation!
+tags:
+  0:
+    x: -8.95423
+    y: -4.01118
+    yaw: -3.14
+
+  1:
+    x: -6.78457
+    y: -6.35085
+    yaw: -1.57
+
+  2:
+    x: -4.01422
+    y: -2.59672
+    yaw: 1.57
+
+
+
+
+
+

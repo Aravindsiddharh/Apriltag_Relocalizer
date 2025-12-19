@@ -1,0 +1,8 @@
+<!-- launch/relocalizer.launch.py or XML -->
+ <launch>
+<node pkg="tf2_ros" type="static_transform_publisher" name="base_to_camera_link"
+      args="0.1 0.0 0.2 0 0 0 base_link camera_link" />
+
+<node pkg="tf2_ros" type="static_transform_publisher" name="camera_to_optical"
+      args="0 0 0 -1.570796 0 -1.570796 camera_link camera_link_optical" />
+ </launch>

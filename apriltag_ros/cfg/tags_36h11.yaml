@@ -1,0 +1,18 @@
+apriltag:
+  ros__parameters:
+    image_transport: "raw"    # image format: "raw" or "compressed"
+    family: "36h11"          # tag family name: 16h5, 25h9, 36h11
+    size: 0.0762             # tag edge size in meters
+    profile: false           # print profiling information to stdout
+    max_hamming: 0           # maximum allowed hamming distance (corrected bits)
+    detector:
+      threads: 1             # number of threads
+      decimate: 2.0          # decimate resolution for quad detection
+      blur: 0.0              # sigma of Gaussian blur for quad detection
+      refine: true           # snap to strong gradients (boolean, not integer)
+      sharpening: 0.25       # sharpening of decoded images
+      debug: false           # write debugging images (boolean, not integer)
+    tag:
+      ids: [0 , 1, 2] # 3]                                        # tag IDs to be detected
+      frames: ["tag36h11_0","tag36h11_1", "tag36h11_2" ] #"tag36h11_3"]  # frame names
+      sizes: [0.15, 0.15, 0.15,] # 0.15]                  # tag-specific edge sizes
